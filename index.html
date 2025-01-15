@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Brixball</title>
+		<link rel="icon" href="opeka.png">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="stil.css">
+		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+		<script src="skripta.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Brixball</h1>
+		</header>
+		<nav>
+			<a href="">Brixball</a>
+			<a href="navodila.html">Navodila</a>
+			<a href="rekordi.html">Rekordi</a>
+			<a href="viri.html">Viri</a>
+			<a href="avtor.html">Avtor</a>
+		</nav>
+		<div id="stats">
+			<p id="t">točke:<b id="tocke" style="color:black">0</b></p>
+			<p>Čas:<b id="cas">00:00</b></p>
+		</div>
+		<div id="main">
+			<canvas id="canvas" width="900" height="600" ></canvas>
+			
+			<p id="finalscore"></p> 
+			<div id="mozak">
+				<p>Dosegli ste nov rekord!<br>vnesite svoje ime</p>
+				<input id="ime" type="text">
+				<p style="visibility: hidden;">s</p>
+			</div>
+			<p id="replay" onclick="bla()">Igraj ponovno</p>
+			<p id="startPrompt">Za začetek pritisnite SPACE.</p>
+		</div>
+		<footer>
+			
+		</footer>
+	</body>
+</html>
