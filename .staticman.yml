@@ -1,0 +1,24 @@
+# Staticman konfiguracija
+comments:
+  branch: "main"  # Branch, kamor bodo shranjeni novi komentarji
+  commitMessage: "rekord"
+  filename: "records"
+  format: "json"
+  moderation: false  # Nastavi na "false", če želiš samodejno objavo brez moderacije
+  path: ""  # Pot, kamor se shranjujejo podatki v repozitoriju
+  requiredFields: ["name", "message"]  # Polja, ki morajo biti obvezno izpolnjena
+  transforms:
+    email: md5  # Uporabi MD5 hashiranje za e-mail (za gravatar)
+  generatedFields:
+    date:
+      type: date
+      options:
+        format: "iso8601"  # Samodejno doda datum v ISO 8601 formatu
+
+# GitHub nastavitev
+github:
+  repository: "uporabnisko-ime/ime-repozitorija"  # Spremeni v svoj GitHub repozitorij
+  branch: "main"  # Branch, kjer se shranjujejo podatki
+
+# Javni ključ za šifriranje podatkov
+publicKey: "AAAAB3NzaC1yc2EAAAADAQABAAABAQC8mruPgxgKhvSWHfCuSicsMHe+WiAK0a0vyzT8m2RFmjdYMbvtQ7iV8GfjTA40pAfevstTZQEkev7dksRhT1kjZCVZb2n8EWi7Em48/IYeYI5wXaK7H081YPsB5hHNkWh796mj0foZhOCAWgoMezRJuJt+DxoQRCOjuhsIfPl2jneDEeJ/oWmHIS28YOs8SQgPEqA4fez4WhQEcTEumPRgvjXt2HjLYuIRJjA7PaV5wDdtAMsCiSabhB1TiVOsDD4Lcf+Ujksy73nrgNDdaGAuRaXLEFWTtIk7oPyKrV38YkgYZJ2AuX3QxsEcKo1tt+fCH4UkoXUOX6TMyV3lvv1V"
